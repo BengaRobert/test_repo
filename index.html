@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Owners</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Insurance</a></li>
+            </ul>
+        </nav>
+        <img class="logo" src="./img/logo.jpg" alt="logo image" width="40" height="50" />
+    </header>
+    <main>
+        <h1>Add new person</h1>
+        <form>
+            <div class="form1">
+                <div>
+                    <label for="first-name.input">First Name</label>
+                    <input type="text" id="first-name.input" />
+                </div>
+                <div>
+                    <label for="last-name.input">Last Name</label>
+                    <input type="text" id="last-name.input" />
+                </div>
+            </div>
+            <div class="form2">
+            <div>
+                <label for="CNP.input">CNP</label>
+                <input type="text" id="CNP.input" />
+            </div>
+            <div>
+                <label for="birthdate">Birth Date</label>
+                <input type="date" id="birthdate" />
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>N/A</option>
+                </select>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button type="submit">Add person</button>
+                <button type="reset">Reset form</button>
+            </div>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

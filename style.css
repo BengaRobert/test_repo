@@ -1,0 +1,103 @@
+.header {
+    min-height: 200px;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(255, 136, 17, 0.3),
+        rgba(244, 208, 111, 0.0)
+      ),
+      url(/img/backround.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .nav {
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 30px;
+    margin: 80px auto;
+  }
+  .nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: center;
+    font-size: 18px;
+    color: white;
+  }
+  .nav ul li a:link{
+    text-decoration: none;
+    color: white;
+  }
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-image: url(./img/backround.jpg)
+}   
+.logo{
+    margin-left: 3%;
+    top: -160px;
+    width: 12%;
+    height: 12%;
+    position: relative;
+
+}
+
+nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 1s;
+  }
+  nav ul li:hover::after {
+    width: 100%;
+  }
+  .form1{
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+  .form2{
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+
+}
+.form1 div{
+    background-color: rgb(204, 88, 11,0.6);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px;
+}
+.form1 div input {
+    width: 350px;
+}
+.form2 div input {
+    width: 150px;
+}
+.form2 div select {
+    width: 150px;
+}
+.form2 div {
+    background-color: rgb(204, 88, 11,0.6);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 12px;
+}
+.action-buttons {
+    display: flex;
+    gap: 50px;
+    margin-left: 710px;
+}
+.action-buttons button {
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: rgb(204, 88, 11,0.6);
+
+}
