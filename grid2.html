@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            /* Auto fit ne ajuta sa aranjam in pagina in functie de dimensiunea ecranului */
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            grid-gap: 1em
+
+        }
+        .wrapper > div {
+            background: lightgray;
+            padding: 1em;
+        }
+        .wrapper >div:nth-child(odd){
+            background: grey;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aliquid quo modi vel provident architecto pariatur, corrupti error aut, dolor rem alias voluptate molestias, consequuntur exercitationem laudantium. Optio, dolorum vero? </div>
+    <div>2</div>
+    <div>3 </div>
+    <div>4 </div>
+    <div>5 </div>
+    <div>6 </div>
+    <div>7 </div>
+    <div>8 </div>
+    <div>9 </div>
+    <div>10 </div>
+    <div>11</div>
+    <div>12</div>
+
+</div>
+
+</body>
+</html>

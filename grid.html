@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em; 
+            /* acelasi lucru ca pe primele 2  */
+            
+            /* Mareste dimeniunile casetei in functie de textul pe care il contine  */
+            grid-auto-rows: minmax(80px, auto);
+        }
+        .wrapper > div {
+            background: lightgray;
+            padding: 1em;
+        }
+        .wrapper >div:nth-child(odd){
+            background: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Box1</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero necessitatibus ipsam aut culpa a voluptatem voluptatum quibusdam soluta fugiat tempore saepe at, porro adipisci velit sunt esse beatae. Facere?</div>
+        <div>Box3</div>
+        <div>Box X</div>
+        <div>Box X</div>
+        <div>Box X</div>
+        <div>Box X</div>
+        <div>Box X</div>
+        <div>Box X</div>
+        <div>Box X</div>
+        <div>Box X</div>
+    </div>
+</body>
+</html>
