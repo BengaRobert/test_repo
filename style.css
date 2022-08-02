@@ -1,23 +1,19 @@
-.header {
-    min-height: 200px;
-    width: 100%;
+header {
+    height: 5rem;
     background-image: linear-gradient(
         rgba(255, 136, 17, 0.3),
         rgba(244, 208, 111, 0.0)
       ),
       url(/img/backround.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+
   }
   .nav {
     display: flex;
-    padding: 1% 4%;
     justify-content: space-between;
-    align-items: center;
-    width: 500px;
-    height: 30px;
-    margin: 80px auto;
+    
+    
   }
   .nav ul li {
     list-style: none;
@@ -35,13 +31,15 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     background-image: url(./img/backround.jpg)
+    
+    
 }   
 .logo{
-    margin-left: 3%;
+    /* margin-left: 3%;
     top: -160px;
     width: 12%;
     height: 12%;
-    position: relative;
+    position: relative; */
 
 }
 
