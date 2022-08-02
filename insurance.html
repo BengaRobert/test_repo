@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance</title>
+    <link rel="stylesheet" href="insurance.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/demo-logo-black.png" alt="Logo image"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Owners</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="insurance.html">Insurance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Choose Insurance</h1>
+        <div class="body">
+            <form>
+                <div class="form-field top-row">
+                    <label for="company">Company</label>
+                    <input type="text" id="company"/>
+                </div>
+                <div class="form-field top-row" id="type">
+                    <label for="perosne-id">Persone ID</label>
+                    <br>
+                    <select id="perosne-id">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                    </div>
+                    <div class="form-field top-row" id="car-id">
+                        <label for="car-id">Car ID</label>
+                        <br>
+                        <select id="car-id">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                </div>
+                <div class="form-field third-row">
+                    <label for="direct-pay">Direct Pay</label>
+                    <input type="checkbox" id="direct-pay"/>
+                </div>
+                <div class="form-field third-row">
+                        <label for="start">Start</label>
+                        <input type="date" id="start"/>
+                    </div>
+                    <div class="form-field third-row">
+                        <label for="end">End</label>
+                        <input type="date" id="end"/>
+                    </div>
+                <div class="form-field forth-row">
+                    <label for="payment-type">Payment-type</label>
+                    <!-- <input type="radio" id="payment-type"/> -->
+                    <p>Please select your payment type</p>
+                         <input type="radio" id="cash" name="payment-type" value="cash">
+                         <label for="cash">Cash</label>
+                         <input type="radio" id="Card" name="payment-type" value="card">
+                         <label for="card">Card</label>
+                         <input type="radio" id="more-payments" name="payment-type" value="more-payments">
+                         <label for="more-payments">More payments</label>
+                    </div>
+                <div class="form-field forth-row" id="power">
+                    <label for="power">Power</label>
+                    <input type="number" id="power"/>
+                    </div>
+                    <div class="form-field forth-row" id="price">
+                        <label for="price">Price</label>
+                        <input type="number" id="price"/>
+            </div>
+            <div class="form-field" id="notes">
+                <label for="notes">Notes</label>
+                <input type="text" id="notes"/>
+             </div>
+                <div class="action-buttons">
+                    <button type="submit" id="submit-button">Add Car</button>
+                    <button type="reset" id="submit-button">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-image: url("img/bg-image.webp");
+  }
+  
+  body header {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+  }
+  
+  body header .logo {
+  height: 100%;
+  }
+  
+  body ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  body ul li {
+    border-right: 2px solid #ebcbca;
+  }
+
+  body ul li:last-child {
+    border-right: none;
+  }
+  
+  body ul li a {
+    display: block;
+    color: #666;
+    background-color: #dfdfef;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  body ul  li  a:hover {
+    background-color:#ddd;
+  }
+  
+  /* main */
+  main {
+    padding-top: 100px;
+  }
+  
+  
+  form {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(6, 2fr);
+    text-align: center;
+  }
+  
+  form > .form-field > input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form  .form-field {
+    padding: 14px;
+    background-color: #dfdfef;
+  }
+  
+  form  .form-field:last-child {
+    background-color: aqua;
+  }
+  
+  form  .form-field:nth-child(9) {
+    background-color: rgba(255, 0, 0, 0.2);
+    grid-column: 2/2;
+    grid-row-start: 3;
+  }
+  
+  form .action-buttons {
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  form .action-buttons > #submit-button {
+    background-color: #ddd;
+    color: var(--app-black);
+    border: 2px solid #4CAF50;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  form .action-buttons > #submit-button:hover {
+    background-color:#4CAF50;
+    color:#4CAF50;
+    opacity: 0.4;
+  }
+  
+  .top-row {
+    grid-column: span 2;
+  }
+  .third-row{
+    grid-column: span 2;
+  }
+  .forth-row{
+    grid-column: span 2;
+    grid-column: 1/5;
+  } 
+ #price{
+    grid-row: 3;
+    grid-column: 5/6;
+ }
+ #notes{
+    grid-row: 3;
+    grid-column: 6;
+ }
+ #power{
+    grid-row: 1;
+    grid-column: 6;
+ }
+ #car-id{
+    grid-row: 1;
+    grid-column: 5;
+ }
+  
