@@ -10,10 +10,10 @@
         <img class="logo" src="img/demo-logo-black.png" alt="Logo image"/>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Owners</a></li>
-                <li><a href="cars.html">Cars</a></li>
-                <li><a href="insurance.html">Insurance</a></li>
+                <li onclick="selectPageByIndex(0)" class="active"><a href="index.html">Home</a></li>
+                <li onclick="selectPageByIndex(1)"><a href="#">Owners</a></li>
+                <li onclick="selectPageByIndex(2)"><a href="cars.html">Cars</a></li>
+                <li onclick="selectPageByIndex(3)"><a href="insurance.html">Insurance</a></li>
             </ul>
         </nav>
     </header>
@@ -38,20 +38,33 @@
                     <label for="cnp">Identification Number</label>
                     <input type="text" id="cnp"/>
                 </div>
-                <div class="form-field" id="gender-select">
+                <!-- <div class="form-field" id="gender-select">
                     <label for="gender">Gender</label>
                     <select id="gender">
                         <option>Male</option>
                         <option>Female</option>
                         <option>N/A</option>
                     </select>
-                </div>
+                </div> -->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                     <ul>
+                        <li>Male</li><br>
+                        <li>Female</li><br>
+                        <li>N/A</li><br>
+                     </ul>
+                    </div>
+                  </div>
                 <div class="action-buttons">
                     <button type="submit" id="submit-button">Add person</button>
                     <button type="reset" id="submit-button">Reset Form</button>
                 </div>
+                
             </form>
         </div>
     </main>
 </body>
+<script  rel="text/javascript" src="./test_repo/javascript.js"></script>
+                
 </html>
